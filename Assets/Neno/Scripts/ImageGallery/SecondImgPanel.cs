@@ -13,7 +13,7 @@ namespace Neno.Scripts
         public void OnInputClicked(InputClickedEventData eventData)
         {
             GameObject photoPanelObj = Instantiate(photoPanel2Create,
-                Camera.main.transform.position + Camera.main.transform.forward + Camera.main.transform.up,
+                Camera.main.transform.position + Camera.main.transform.forward + Camera.main.transform.up * 0.3f,
                 Quaternion.LookRotation(-Camera.main.transform.forward));
             photoPanelObj.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
         }

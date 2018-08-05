@@ -59,9 +59,8 @@ namespace Neno.Scripts
                 //今のマテリアルのインスタンスを生成する。
                 TapCount = 0;
                 GameObject photoPanelObj = Instantiate(this.photoPanel2Create,
-                    Camera.main.transform.position + Camera.main.transform.forward + Camera.main.transform.up,
+                    Camera.main.transform.position + Camera.main.transform.forward + Camera.main.transform.up *0.3f,
                     Quaternion.LookRotation(-Camera.main.transform.forward));
-
 
                 photoPanelObj.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
             }

@@ -46,7 +46,7 @@ namespace Neno.Scripts
             {
                 //壁にrayが当たらなかったら頭からgaze方向に15mの位置において頭の方向に向かせる。
                 nolomalVector = -cameraTransform.forward;
-                return cameraTransform.position + cameraTransform.forward * 15;
+                return cameraTransform.position + cameraTransform.forward * 3;
             }
         }
 
